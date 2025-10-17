@@ -28,6 +28,16 @@ public class LibrarySimulator {
         int user3_borrowed_books = 0;
         double user3_fees = 0;
 
+        //Administrator stats
+        double total_revenue = 0; // total money from borrowing
+        int total_borrow = 0;
+        int total_return = 0;
+
+        // Main menu loop: for the interface
+        //while loop
+        while(true) {
+        
+
         
 
 
@@ -62,4 +72,5 @@ Code style:
 - Use clear variable names
 - Indent properly
 - Add short comments for key parts*/
+
 
