@@ -1,0 +1,104 @@
+Descriptoin: 
+This group project involves developing a Library Simulation System for a public library.
+The system enables users to perform typical library operations such as borrowing books, returning books, and viewing session activity summaries.
+The system also allows an administrator to view overall statistics and library performance. You are to implement a user-friendly Java program with the following features
+
+
+1. Account Management:
+    The program manages three predefined library accounts, each identified by:
+    - ID Number
+    - User Name
+    - Books Currently Borrowed
+    - Session Statistics
+
+    These accounts should be pre-defined and not require any user input.
+
+2.User Interface (Account Selection Menu):
+    When the program starts:
+
+    - Display a welcome message.
+
+    - Show a menu prompting the user to:
+        - Select a user account (display ID number and name)
+        - Login as Administrator
+        - Exit the program
+        - If a user selects an account, they are directed to the User Operations Menu.
+
+    - If the administrator is selected, show the Administrator Menu.
+
+3. User Interface (Account Operations Menu):
+    Once logged in, users can perform the following actions:
+
+    View Borrowed Books Count:
+    Display the number of books currently borrowed by the user.
+    
+    Borrow Book:
+    (Simulate borrowing one book.)
+
+        - The system charges a 0.50 credit fee per borrowed book (accumulated in statistics, not deducted from any account).
+        - Users cannot borrow more than 5 books at once.
+
+    Return Book:
+    (Simulate returning one book.)
+
+        - No fee.
+        - Users cannot return if they have no books borrowed.
+
+    View Session Summary:
+    Show session-based activity summary:
+
+        - Number of books borrowed
+        - Number of books returned
+        - Total fees incurred during the session
+
+    Exit to Main Menu:
+    End the session and return to the Account Selection Menu.
+    The session summary is reset after each login.
+
+4.User Interface (Administrator Menu):
+    Accessible only to the administrator.
+    
+    Options available:
+
+    - View Total Revenue:
+      Show total fees collected from all book borrow operations across all users.
+
+    - Most Frequent Operation:
+     Show the most commonly performed user operation (borrow or return). If tied, display both.
+
+    - Exit to Main Menu
+      The admin menu remains active until the user chooses to exit.
+
+
+Note (Rules and Constraints) :
+- You must use only concepts covered in the course.
+- Do not use arrays.
+- Do not use multiple classes (this version must be implemented in a single Java class).
+
+- Format outputs using printf, \t, or substring to ensure:
+    -Two decimal places for monetary values
+    -Appropriate and readable output
+    
+- The program must not allow borrowing more than 5 books or returning books if none are borrowed.
+- If the user attempts an invalid operation (e.g., borrowing the 6th book), show an appropriate error message.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
