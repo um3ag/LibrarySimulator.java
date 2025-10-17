@@ -5,26 +5,26 @@ import java.util.Scanner;
 
 
 
-public class LibrarySimulator {
-    public static void main(string args[]){
-        Scanner input = new Scanner(system.in);
+public class Main {
+    public static void main(String [] args){
+        Scanner input = new Scanner(System.in);
 
         // User predefined accounts
         // Includes: ID, Name, Borrowed books, Total session data and fees
        
-        int user1_ID = "446109487";
+        int user1_ID = 446109487;
         String user1_name = "Bilal";
         int user1_borrowed_books = 0;
         double user1_fees = 0;
 
         
-         int user2_ID = "446109487";
-        String user2_name = "Bilal";
+         int user2_ID = 446102126;
+        String user2_name = "Abdullah";
         int user2_borrowed_books = 0;
         double user2_fees = 0;
 
-         int user3_ID = "446109487";
-        String user3_name = "Bilal";
+         int user3_ID = 446107156;
+        String user3_name = "Bader";
         int user3_borrowed_books = 0;
         double user3_fees = 0;
 
@@ -35,32 +35,29 @@ public class LibrarySimulator {
 
         // Main menu loop: for the interface
         // we use a whilw loop so that the expression when using the interface is always true. Asking the user to select the option
+        System.out.println("Hello! Welcome to Library Simulator, please choose an option.(1-5) ");
         while(true) {
-        System.out.println(" 1. Login as " + user1_ID + "," + user1_name);
-        System.out.println(" 2. Login as " + user1_ID + "," + user1_name);
-        System.out.println(" 3. Login as " + user1_ID + "," + user1_name);
+        System.out.println(" 1. Login as " + user1_ID + " , ID: " + user1_name);
+        System.out.println(" 2. Login as " + user2_ID + " , ID: " + user2_name);
+        System.out.println(" 3. Login as " + user3_ID + " , ID: " + user3_name);
         System.out.println(" 4. Admin Login");
-        System.out.println(" 5.Exit);
-        } // User interface choices
-
-            int choice = input.next.Int();
-
-            if (choice == 5) {
-                System.out.print("Thank you for using Library Simulator, have a nice day);
-                break;
-            } // Exiting the program
-
-                
+        System.out.println(" 5.Exit");
         
-      
-        
+         int choice = input.nextInt();
+         // User interface choices
+         
+         if (choice> 5) {
+             System.out.println("Invalid Input! Please choose an option. (1-5)");
+         }
 
-        
+           
 
+         if (choice == 5) {
+                System.out.println("Thank you for using Library Simulator. Have a nice day!");
+                break; // exits the while loop, ends program
+            }
+        }
 
-
-    }
-}
 
 
 
@@ -89,6 +86,7 @@ Code style:
 - Use clear variable names
 - Indent properly
 - Add short comments for key parts*/
+
 
 
 
