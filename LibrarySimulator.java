@@ -36,6 +36,23 @@ public class LibrarySimulator {
         // Main menu loop: for the interface
         // we use a whilw loop so that the expression when using the interface is always true. Asking the user to select the option
         while(true) {
+        System.out.println(" 1. Login as " + user1_ID + "," + user1_name);
+        System.out.println(" 2. Login as " + user1_ID + "," + user1_name);
+        System.out.println(" 3. Login as " + user1_ID + "," + user1_name);
+        System.out.println(" 4. Admin Login");
+        System.out.println(" 5.Exit);
+        } // User interface choices
+
+            int choice = input.next.Int();
+
+            if (choice == 5) {
+                System.out.print("Thank you for using Library Simulator, have a nice day);
+                break;
+            } // Exiting the program
+
+                
+        
+      
         
 
         
@@ -72,6 +89,7 @@ Code style:
 - Use clear variable names
 - Indent properly
 - Add short comments for key parts*/
+
 
 
 
