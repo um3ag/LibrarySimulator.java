@@ -26,7 +26,7 @@ public class Main {
          int user3_ID = 446107156;
         String user3_name = "Bader";
         int user3_borrowed_books = 0;
-        double user3_fees = 0;
+        double user3_fees = 0; // using double because of the 0.50 credit fee
 
         //Administrator stats
         double total_revenue = 0; // total money from borrowing
@@ -34,7 +34,7 @@ public class Main {
         int total_return = 0;
 
         // Main menu loop: for the interface
-        // we use a whilw loop so that the expression when using the interface is always true. Asking the user to select the option
+        // we use a whilw loop so that the expression when using the interface is always true. Asking the user to select the option then reedirecting it into its designated user
         System.out.println("Hello! Welcome to Library Simulator, please choose an option.(1-5) ");
         while(true) {
         System.out.println(" 1. Login as " + user1_ID + " , ID: " + user1_name);
@@ -86,6 +86,7 @@ Code style:
 - Use clear variable names
 - Indent properly
 - Add short comments for key parts*/
+
 
 
 
