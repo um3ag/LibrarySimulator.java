@@ -110,7 +110,12 @@ public class Main {
 							total_borrow++;
 							numberbooksborrow++;
 							System.out.printf("You borrowed a book. Fee: %.2f SR\n", 0.50);
-							System.out.println("You now have "+ numberbooksborrow + " borrowed");
+							if (numberbooksborrow == 1){
+							    	System.out.println("You now have "+ numberbooksborrow + " book borrowed");
+							} else{
+							    	System.out.println("You now have "+ numberbooksborrow + " books borrowed");
+							}
+						
 
 						}
 						// Books Returned
@@ -123,7 +128,11 @@ public class Main {
 							total_return++;
 							numberbooksborrow--;
 							System.out.println("You have returned a book");
-							System.out.println("You now have "+ numberbooksborrow + " borrowed");
+							if (numberbooksborrow == 1){
+							System.out.println("You now have "+ numberbooksborrow + " book borrowed");
+							}else {
+							   System.out.println("You now have "+ numberbooksborrow + " books borrowed"); 
+							}
 						}
 
 						//Number 4 shows session summary
@@ -197,6 +206,7 @@ Code style:
 - Use clear variable names
 - Indent properly
 - Add short comments for key parts*/
+
 
 
 
