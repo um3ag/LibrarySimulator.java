@@ -57,7 +57,7 @@ public class Main {
 				break; // exits the while loop, ends program
 			}
 			// User Login
-			if (choice >= 1 && choice <= 3) {
+			if (choice >= 1 && choice <= 4) {
 				int Borrowed_session = 0;
 				int Returned_session = 0;
 				double Session_fees = 0.0;
@@ -79,6 +79,9 @@ public class Main {
 					current_User = user3_name;
 					System.out.println("Welcome Bader !");
 					//ADMIN LOGIN
+				} else if (choice == 4) {
+					System.out.print("enter the password");
+						
 				}
 
 
@@ -206,6 +209,7 @@ Code style:
 - Use clear variable names
 - Indent properly
 - Add short comments for key parts*/
+
 
 
 
