@@ -69,32 +69,80 @@ public class Main {
 					total_borrowed = user1_borrowed_books;
 					current_User = user1_name;
 					System.out.println("Welcome Bilal ! ");
-
-				} else if (choice ==2) {
-					total_borrowed = user2_borrowed_books;
-					current_User = user2_name;
-					System.out.println("Welcome Abdullah !");
-				} else if (choice == 3) {
-					total_borrowed = user3_borrowed_books;
-					current_User = user3_name;
-					System.out.println("Welcome Bader !");
-					//ADMIN LOGIN
-				} else if (choice == 4) {
-					System.out.print("enter the password");
-						
-				}
-
-
-
-				//User Operations menu
-
-				while(true) {
 					System.out.println("Select between (1-5): ");
 					System.out.println(" 1. View borrowed books count");
 					System.out.println(" 2. Borrow Book ");
 					System.out.println(" 3. Return Book ");
 					System.out.println(" 4. View session summary ");
 					System.out.println(" 5. Exit to Main Menu ");
+					int UserChoice = input.nextInt();
+
+				} else if (choice ==2) {
+					total_borrowed = user2_borrowed_books;
+					current_User = user2_name;
+					System.out.println("Welcome Abdullah !");
+					System.out.println("Select between (1-5): ");
+					System.out.println(" 1. View borrowed books count");
+					System.out.println(" 2. Borrow Book ");
+					System.out.println(" 3. Return Book ");
+					System.out.println(" 4. View session summary ");
+					System.out.println(" 5. Exit to Main Menu ");
+					int UserChoice = input.nextInt();
+				} else if (choice == 3) {
+					total_borrowed = user3_borrowed_books;
+					current_User = user3_name;
+					System.out.println("Welcome Bader !");
+					System.out.println("Select between (1-5): ");
+					System.out.println(" 1. View borrowed books count");
+					System.out.println(" 2. Borrow Book ");
+					System.out.println(" 3. Return Book ");
+					System.out.println(" 4. View session summary ");
+					System.out.println(" 5. Exit to Main Menu ");
+					int UserChoice = input.nextInt();
+					//ADMIN LOGIN
+				} else if (choice == 4) {
+					int password_admin = 1234;
+					System.out.println("Welcome Mr Admin! Enter your password: " );
+					password_admin = input.nextInt();
+					if(password_admin == 1234) {
+						System.out.println("Welcome to the Admin Menu! , please choose an option.(1-3) ");
+					} else {
+						System.out.println("U SCAMMER!!! GET OUT!!!  ");
+						break;
+					}
+					while(true) {
+
+
+
+						System.out.println(" 1. View Total Revenue" );
+						System.out.println(" 2. Most Frequent Operation" );
+						System.out.println(" 3. Exit to Main Menu");
+
+						int AdminChoice = input.nextInt();
+						//View Total Revenue
+						if (AdminChoice == 1) {
+							System.out.printf("Total Revenue: %.2f Sr\n ", total_revenue);
+						} else if (AdminChoice == 2) {
+
+							System.out.print("I");
+
+						} else if (AdminChoice == 3) {
+							System.out.println("Returning to Main Menu...");
+							break;
+						} else {
+							System.out.println("Invalid output. Please select an option (1-3): ");
+						}
+
+					}
+
+				}
+
+
+//End of ADMIN LOGIN
+				//User Operations menu
+
+				while(true) {
+
 
 					int UserChoice = input.nextInt();
 
@@ -113,12 +161,12 @@ public class Main {
 							total_borrow++;
 							numberbooksborrow++;
 							System.out.printf("You borrowed a book. Fee: %.2f SR\n", 0.50);
-							if (numberbooksborrow == 1){
-							    	System.out.println("You now have "+ numberbooksborrow + " book borrowed");
-							} else{
-							    	System.out.println("You now have "+ numberbooksborrow + " books borrowed");
+							if (numberbooksborrow == 1) {
+								System.out.println("You now have "+ numberbooksborrow + " book borrowed");
+							} else {
+								System.out.println("You now have "+ numberbooksborrow + " books borrowed");
 							}
-						
+
 
 						}
 						// Books Returned
@@ -131,10 +179,10 @@ public class Main {
 							total_return++;
 							numberbooksborrow--;
 							System.out.println("You have returned a book");
-							if (numberbooksborrow == 1){
-							System.out.println("You now have "+ numberbooksborrow + " book borrowed");
-							}else {
-							   System.out.println("You now have "+ numberbooksborrow + " books borrowed"); 
+							if (numberbooksborrow == 1) {
+								System.out.println("You now have "+ numberbooksborrow + " book borrowed");
+							} else {
+								System.out.println("You now have "+ numberbooksborrow + " books borrowed");
 							}
 						}
 
@@ -180,42 +228,3 @@ public class Main {
 
 	}
 }
-    
-
-
-
-/* Note (Rules and Constraints) :
-- You must use only concepts covered in the course.
-- Do not use arrays.
-- Do not use multiple classes (this version must be implemented in a single Java class).
-- Format outputs using printf, \t, or substring to ensure:
-
-Two decimal places for monetary values
-
-Appropriate and readable output
-- The program must not allow borrowing more than 5 books or returning books if none are borrowed.
-- If the user attempts an invalid operation (e.g., borrowing the 6th book), show an appropriate error message.
-Submission Rules:
-
-Submit your solution as LibrarySimulator.java on LMS
-
-The submitted Java file must include the names and ID numbers of all group members at the top as a comment
-
-Only one student of each group needs to submit the project on behalf of the whole group
-
-Code must compile and run with javac LibrarySimulator.java and java LibrarySimulator
-
-Code style:
-- Use clear variable names
-- Indent properly
-- Add short comments for key parts*/
-
-
-
-
-
-
-
-
-
-
