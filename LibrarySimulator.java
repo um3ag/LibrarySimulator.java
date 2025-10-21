@@ -141,7 +141,7 @@ public class Main {
 						System.out.println("\n Session Summary: ");
 						System.out.println("Books Borrowed: " + Borrowed_session);
 						System.out.println("Books Returned: " + Returned_session);
-						System.out.println("Total fees:" + Session_fees);
+						System.out.println("Total fees:" + Session_fees + " SR" );
 					} else if (UserChoice == 5) {
 						System.out.println("Returning to Main Menu. ");
 						//resets
@@ -215,3 +215,4 @@ public class Main {
 
 	}
 }
+
