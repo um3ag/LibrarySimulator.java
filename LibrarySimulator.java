@@ -57,7 +57,7 @@ public class Main {
 				break; // exits the while loop, ends program
 			}
 			// User Login
-			if (choice >= 1 && choice <= 4) {
+			if (choice >= 1 && choice <= 3) {
 				int Borrowed_session = 0;
 				int Returned_session = 0;
 				double Session_fees = 0.0;
@@ -69,77 +69,21 @@ public class Main {
 					total_borrowed = user1_borrowed_books;
 					current_User = user1_name;
 					System.out.println("Welcome Bilal ! ");
-					System.out.println("Select between (1-5): ");
-					System.out.println(" 1. View borrowed books count");
-					System.out.println(" 2. Borrow Book ");
-					System.out.println(" 3. Return Book ");
-					System.out.println(" 4. View session summary ");
-					System.out.println(" 5. Exit to Main Menu ");
-					int UserChoice = input.nextInt();
 
 				} else if (choice ==2) {
 					total_borrowed = user2_borrowed_books;
 					current_User = user2_name;
 					System.out.println("Welcome Abdullah !");
-					System.out.println("Select between (1-5): ");
-					System.out.println(" 1. View borrowed books count");
-					System.out.println(" 2. Borrow Book ");
-					System.out.println(" 3. Return Book ");
-					System.out.println(" 4. View session summary ");
-					System.out.println(" 5. Exit to Main Menu ");
-					int UserChoice = input.nextInt();
+
 				} else if (choice == 3) {
 					total_borrowed = user3_borrowed_books;
 					current_User = user3_name;
 					System.out.println("Welcome Bader !");
-					System.out.println("Select between (1-5): ");
-					System.out.println(" 1. View borrowed books count");
-					System.out.println(" 2. Borrow Book ");
-					System.out.println(" 3. Return Book ");
-					System.out.println(" 4. View session summary ");
-					System.out.println(" 5. Exit to Main Menu ");
-					int UserChoice = input.nextInt();
-					//ADMIN LOGIN
-				} else if (choice == 4) {
-					int password_admin = 1234;
-					System.out.println("Welcome Mr Admin! Enter your password: " );
-					password_admin = input.nextInt();
-					if(password_admin == 1234) {
-						System.out.println("Welcome to the Admin Menu! , please choose an option.(1-3) ");
-					} else {
-						System.out.println("U SCAMMER!!! GET OUT!!!  ");
-						break;
-					}
-					while(true) {
 
 
-
-						System.out.println(" 1. View Total Revenue" );
-						System.out.println(" 2. Most Frequent Operation" );
-						System.out.println(" 3. Exit to Main Menu");
-
-						int AdminChoice = input.nextInt();
-						//View Total Revenue
-						if (AdminChoice == 1) {
-							System.out.printf("Total Revenue: %.2f Sr\n ", total_revenue);
-						} else if (AdminChoice == 2) {
-
-							System.out.print("I");
-
-						} else if (AdminChoice == 3) {
-							System.out.println("Returning to Main Menu...");
-							break;
-						} else {
-							System.out.println("Invalid output. Please select an option (1-3): ");
-						}
-
-					}
-
-				}
+				} 
 
 
-//End of ADMIN LOGIN
-				//User Operations menu
 
 				while(true) {
 
@@ -205,20 +149,48 @@ public class Main {
 					} else {
 						System.out.println("Invalid Input. Select another option");
 					}
-
-
-
-
-
-
-
-
-
-
-
-
 				}
 			}
+
+            
+            while(true){
+                 if (choice == 4) {
+					int password_admin = 1234;
+					System.out.println("Welcome Mr Admin! Enter your password: " );
+					password_admin = input.nextInt();
+					if(password_admin == 1234) {
+						System.out.println("Welcome to the Admin Menu! , please choose an option.(1-3) ");
+					} else {
+						System.out.println("U SCAMMER!!! GET OUT!!!  ");
+						break;
+					}
+					while(true) {
+
+
+
+						System.out.println(" 1. View Total Revenue" );
+						System.out.println(" 2. Most Frequent Operation" );
+						System.out.println(" 3. Exit to Main Menu");
+
+						int AdminChoice = input.nextInt();
+						//View Total Revenue
+						if (AdminChoice == 1) {
+							System.out.printf("Total Revenue: %.2f Sr\n ", total_revenue);
+						} else if (AdminChoice == 2) {
+
+							System.out.print("I");
+
+						} else if (AdminChoice == 3) {
+							System.out.println("Returning to Main Menu...");
+							break;
+						} else {
+							System.out.println("Invalid output. Please select an option (1-3): ");
+						}
+
+					}break;
+
+				}
+            }
 
 
 		}
