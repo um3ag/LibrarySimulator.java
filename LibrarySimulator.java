@@ -81,11 +81,17 @@ public class Main {
 					System.out.println("Welcome Bader !");
 
 
-				} 
+				}
 
 
 
 				while(true) {
+					System.out.println("Select between (1-5): ");
+					System.out.println(" 1. View borrowed books count");
+					System.out.println(" 2. Borrow Book ");
+					System.out.println(" 3. Return Book ");
+					System.out.println(" 4. View session summary ");
+					System.out.println(" 5. Exit to Main Menu ");
 
 
 					int UserChoice = input.nextInt();
@@ -139,9 +145,9 @@ public class Main {
 					} else if (UserChoice == 5) {
 						System.out.println("Returning to Main Menu. ");
 						//resets
-						if (choice == 1) user1_borrowed_books = Borrowed_session;
-						else if (choice == 2) user2_borrowed_books = Borrowed_session;
-						else user3_borrowed_books = Borrowed_session;
+						if (choice == 1) user1_borrowed_books = total_borrowed;
+						else if (choice == 2) user2_borrowed_books = total_borrowed;
+						else user3_borrowed_books = total_borrowed;
 						break;
 
 
@@ -152,9 +158,9 @@ public class Main {
 				}
 			}
 
-            
-            while(true){
-                 if (choice == 4) {
+
+			while(true) {
+				if (choice == 4) {
 					int password_admin = 1234;
 					System.out.println("Welcome Mr Admin! Enter your password: " );
 					password_admin = input.nextInt();
@@ -177,8 +183,16 @@ public class Main {
 						if (AdminChoice == 1) {
 							System.out.printf("Total Revenue: %.2f Sr\n ", total_revenue);
 						} else if (AdminChoice == 2) {
+						    if(total_borrow>total_return){
+						        System.out.println("Most Frequent Operation is borrow with: " + total_borrow + " books borrowed");
+						    } else if (total_return>total_borrow){
+						       System.out.println("Most Frequent Operation is borrow with: " + total_borrow + " books returned");
+						    } else {
+						        System.out.println("Both Operations are used Frequently.");
+						    }
 
-							System.out.print("I");
+							
+							
 
 						} else if (AdminChoice == 3) {
 							System.out.println("Returning to Main Menu...");
@@ -187,10 +201,11 @@ public class Main {
 							System.out.println("Invalid output. Please select an option (1-3): ");
 						}
 
-					}break;
+					}
+					break;
 
-				}
-            }
+				}break;
+			}
 
 
 		}
