@@ -1,4 +1,8 @@
 
+// github repo: https://github.com/um3ag/LibrarySimulator.java/tree/main
+//Bilal Bazaraa 446109487
+// Abdullah Fatani 446102126
+// Badr Alsalim    446107156
 public class Member {
 
     // -------- Instance Attributes --------
