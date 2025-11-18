@@ -9,7 +9,7 @@
 
 public class Member {
 
-    // -------- Instance Attributes --------
+   
     private int id;
     private String name;
     private int borrowedCount;
@@ -19,13 +19,13 @@ public class Member {
     private int numReturns;
     private double sessionFees;
 
-    // -------- Static (shared) Attributes --------
+   
     public static double TotalRevenue = 0;
     public static int TotalViewBorrowed = 0;
     public static int TotalBorrows = 0;
     public static int TotalReturns = 0;
 
-    // -------- Constructor --------
+  
     public Member(int id, String name, int borrowedCount) {
         this.id = id;
         this.name = name;
@@ -33,7 +33,7 @@ public class Member {
         reset(); // session stats start fresh
     }
 
-    // -------- Private Helpers --------
+    
     private boolean canBorrow() {
         return borrowedCount < 5;
     }
@@ -42,7 +42,7 @@ public class Member {
         return borrowedCount > 0;
     }
 
-    // -------- Public Methods --------
+    
     public void viewBorrowedCount() {
         System.out.println("Currently borrowed books: " + borrowedCount);
         numViewBorrowed++;
@@ -94,6 +94,6 @@ public class Member {
         sessionFees = 0;
     }
 
-    // Getters if needed
+    // Getters 
     public int getBorrowedCount() { return borrowedCount; }
 }
