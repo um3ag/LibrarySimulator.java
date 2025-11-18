@@ -35,3 +35,29 @@ This phase focuses on rewriting Phase 1 using **Object-Oriented Programming**, e
 | + displayStatistics() : void |
 | + reset() : void |
 +-------------------------------+
+
+
+
+---
+
+##  Technologies Used
+
+- **Java (JDK 17+)**
+- **Scanner**
+- **OOP Concepts**:
+  - Classes & Objects  
+  - Encapsulation  
+  - Static vs instance variables  
+  - Methods and access modifiers  
+
+---
+
+##  How to Run the Program
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/YourRepoHere.git
+
+2. Compile the java files:
+   javac Member.java LibrarySimulator.java
+3. Run the files
