@@ -10,32 +10,6 @@ This phase focuses on rewriting Phase 1 using **Object-Oriented Programming**, e
 
 
 
-+-------------------------------+
-| Member |
-+-------------------------------+
-| - id : int |
-| - name : String |
-| - borrowedCount : int |
-| - numViewBorrowed : int |
-| - numBorrows : int |
-| - numReturns : int |
-| - sessionFees : double |
-+-------------------------------+
-| + TotalRevenue : double |
-| + TotalViewBorrowed : int |
-| + TotalBorrows : int |
-| + TotalReturns : int |
-+-------------------------------+
-| + Member(id, name, count) |
-| - canBorrow() : boolean |
-| - canReturn() : boolean |
-| + viewBorrowedCount() : void |
-| + borrowOne() : boolean |
-| + returnOne() : boolean |
-| + displayStatistics() : void |
-| + reset() : void |
-+-------------------------------+
-
 
 
 ---
