@@ -1,4 +1,4 @@
-# 📚 Library Simulator — Phase 2 (CSC 111 Project)
+# 📚 Library Simulator — Phase 1 & Phase 2 (CSC 111 Project)
 
 ![Java Badge](https://img.shields.io/badge/Language-Java-red)
 
