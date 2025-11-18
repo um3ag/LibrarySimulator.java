@@ -12,7 +12,7 @@ public class LibrarySimulator {
 
         Scanner input = new Scanner(System.in);
 
-        // -------- Create Predefined Users --------
+        
         Member m1 = new Member(446109487, "Bilal", 0);
         Member m2 = new Member(446102126, "Abdullah", 0);
         Member m3 = new Member(446107156, "Bader", 0);
@@ -34,7 +34,7 @@ public class LibrarySimulator {
                 break;
             }
 
-            // ------------ Member Login ------------
+            
             if (choice >= 1 && choice <= 3) {
 
                 Member current;
@@ -74,7 +74,7 @@ public class LibrarySimulator {
                 }
             }
 
-            // ------------ Admin Login ------------
+           
             if (choice == 4) {
 
                 System.out.print("Enter admin password: ");
