@@ -115,6 +115,6 @@ public class LibrarySimulator {
             }
         }
 
-        input.close();
+        
     }
 }
