@@ -1,12 +1,8 @@
+
+// github repo: https://github.com/um3ag/LibrarySimulator.java/tree/main
 //Bilal Bazaraa 446109487
 // Abdullah Fatani 446102126
 // Badr Alsalim    446107156
-// GitHub Repository: https://github.com/YourRepoHere
-// Group Members:
-// Bilal Bazaraa 446109487
-// Abdullah Fatani 446102126
-// Badr Alsalim 446107156
-
 public class Member {
 
     // -------- Instance Attributes --------
@@ -24,6 +20,10 @@ public class Member {
     public static int TotalViewBorrowed = 0;
     public static int TotalBorrows = 0;
     public static int TotalReturns = 0;
+      private boolean canBorrow() {
+        return borrowedCount < 5;
+    }
+     public Member(int id, String name, int borrowedCount) {
 
     // -------- Constructor --------
     public Member(int id, String name, int borrowedCount) {
@@ -33,6 +33,9 @@ public class Member {
         reset(); // session stats start fresh
     }
 
+    private boolean canReturn() {
+        return borrowedCount > 0;
+    }
     // -------- Private Helpers --------
     private boolean canBorrow() {
         return borrowedCount < 5;
