@@ -4,7 +4,7 @@
 
 
 
-This repository contains the **Phase 2 implementation** of the CSC 111 Project (Library Simulation) at **King Saud University**.  
+This repository contains the **Phase. 2 implementation** of the CSC 111 Project (Library Simulation) at **King Saud University**.  
 This phase focuses on rewriting Phase 1 using **Object-Oriented Programming**, encapsulation, and static tracking.
 
 
