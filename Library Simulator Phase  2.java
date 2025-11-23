@@ -74,6 +74,7 @@ public class LibrarySimulator {
                 }
             }
 
+            // here wehn he press 4 the System thery  show admin page and if he dont put 1234 the page will open 
            
             if (choice == 4) {
 
