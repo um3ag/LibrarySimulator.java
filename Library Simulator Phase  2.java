@@ -34,7 +34,7 @@ public class LibrarySimulator {
                 break;
             }
 
-            
+            // here when the user put num higher than or equals 1 and less than or equals 3
             if (choice >= 1 && choice <= 3) {
 
                 Member current;
