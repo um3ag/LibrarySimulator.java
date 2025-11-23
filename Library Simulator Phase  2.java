@@ -89,7 +89,7 @@ public class LibrarySimulator {
                     System.out.println("\n--- Admin Menu ---");
                     System.out.println("1. View Total Revenue");
                     System.out.println("2. View Most Frequent Operation");
-                    System.out.println("3. Exit Admin Menu");
+                    System.out.println("3. Exit to Admin Menu");
                     System.out.print("Choose: ");
 
                     int adminC = input.nextInt();
