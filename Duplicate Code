@@ -56,7 +56,7 @@ public class Main {
 				System.out.println("Thank you for using Library Simulator. Have a nice day!");
 				break; // exits the while loop, ends program
 			}
-			// User Login
+			// User login
 			if (choice >= 1 && choice <= 4) {
 				int Borrowed_session = 0;
 				int Returned_session = 0;
